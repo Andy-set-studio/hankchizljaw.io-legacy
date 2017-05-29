@@ -9,3 +9,12 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - front-end
+
+# Navigation
+navigation:
+  - text: Home
+    url: /
+  - text: Blog
+    url: /blog
+  - text: Contact
+    url: /contact

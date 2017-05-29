@@ -1,0 +1,14 @@
+<header class="[ site-head ] [ chunk ]" role="banner">
+    <h1 class="is-hidden--text">{{ page.hidden_title | default: page.title }}</h1>
+    <div class="wrapper">
+        <div class="site-head__inner">
+            <a class="site-head__brand" href="/">
+                <span class="is-hidden--text">Go back to the homepage</span>
+
+                {% include icon.html id="logo" %}
+            </a>
+
+            {% include nav.html parent_class="site-head__nav" %}
+        </div>
+    </div>
+</header>
