@@ -1,6 +1,7 @@
 # Global content
 title: Andy Bell - Designer & Front-End Developer
 asset_version: 0.1.0
+asset_base: https://assets.hankchizljaw/assets
 
 # Build settings
 markdown: kramdown
