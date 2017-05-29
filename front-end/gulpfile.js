@@ -45,6 +45,7 @@ var SVG_PATH = 'svg',
     WEBSITE_SCRIPT_PATH = WEBSITE_PATH + '/scripts',
     WEBSITE_IMAGE_PATH = WEBSITE_PATH + '/images',
     WEBSITE_FONT_PATH = WEBSITE_PATH + '/fonts',
+    WEBSITE_SVG_SYMBOL_PATH = '../_includes/svg',
     DATA_FILE = 'data.json';
 
 /*------------------------------------*\
@@ -65,7 +66,7 @@ gulp.task('process-svg', function() {
                 .pipe(svgSymbols({
                     templates: ['default-svg']
                 }))
-                .pipe(gulp.dest(SVG_SYMBOL_PATH));
+                .pipe(gulp.dest(WEBSITE_SVG_SYMBOL_PATH));
 });
 
 // Process all the nunjucks templates
