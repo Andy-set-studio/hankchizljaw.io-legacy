@@ -1,6 +1,42 @@
+$site-head__icon-size: 40px;
+
 .site-head {
     
     @include mode("global") {
+        
+        // The inner flex wrapper 
+        &__inner {
+            @extend %flex-wrapper;
 
+            align-items: flex-end;
+        }
+
+        // Main logo
+        &__brand {
+            
+            &,
+            .icon {
+                width: $site-head__icon-size;
+                height: $site-head__icon-size;
+            }
+
+            .icon {
+                fill: $black;
+            }
+
+            @include hover() {
+                .icon {
+                    fill: $purple;
+                }
+            }
+        }
+
+        // The primary navigation
+        &__nav {
+
+            // TODO: There needs to be a better way of doing this. 
+            // Currently, the width is limited by the icon size with rhythm (from the flow component)
+            width: calc(100% - #{ $site-head__icon-size + $rhythm });
+        }
     }
 }
