@@ -1,0 +1,14 @@
+.headline {
+    
+    @include mode("global") {
+        
+        // Pull the heading up
+        &__heading {
+            margin-top: -10px;
+        }
+
+        &__summary {
+            @include font-size(24px, true, false, $tight-line-height-ratio);
+        }
+    }
+}

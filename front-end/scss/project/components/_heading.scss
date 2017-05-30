@@ -1,0 +1,16 @@
+.heading {
+    
+    @include mode("global") {
+        font-weight: 700;
+    
+        // Go through the sizes
+
+        &--primary {
+            @include font-size(40px, true, false, $tight-line-height-ratio);
+
+            @include media-query("lap-and-up") {
+                @include font-size(48px, true, false, $tight-line-height-ratio);
+            }
+        }
+    }
+}
