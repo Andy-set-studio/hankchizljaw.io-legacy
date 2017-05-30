@@ -9,17 +9,6 @@
             position: relative;
 
             @include bounce-scroll("horizontal");
-
-            &:after {
-                display: block;
-                width: 1px;
-                height: 100%;
-                background: red;
-                top: 0;
-                right: 0;
-
-                @include pseudo-decor();
-            }
         }
 
         &__item {
