@@ -1,0 +1,16 @@
+.splitter {
+
+    @include mode("global") {
+        display: block;
+        height: 2px;
+        background: $standard-grad;
+        border: none;
+        padding: 0;
+        margin: $gutter--double 0;
+        animation: gradmotion 5000ms ease infinite;
+
+        @include media-query("lap-and-up") {
+            width: 80%;
+        }
+    }
+}

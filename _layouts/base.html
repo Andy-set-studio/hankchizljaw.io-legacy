@@ -17,7 +17,13 @@
 
         {% include partials/site-head.html %}
 
-        {{ content }}
+        <div class="wrapper">
+            {% include partials/splitter.html %}
+            
+            <main id="main-content">
+                {{ content }}
+            </main>
+        </div>
 
     </body>
 </html>
