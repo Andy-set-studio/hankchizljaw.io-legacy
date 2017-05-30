@@ -28,6 +28,8 @@
         }
 
         &__link {
+            @extend %clickable;
+
             text-transform: uppercase;
             text-decoration: none;
             color: $charcoal;

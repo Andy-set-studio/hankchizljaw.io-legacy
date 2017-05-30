@@ -13,7 +13,8 @@ $site-head__icon-size: 40px;
 
         // Main logo
         &__brand {
-            
+            @extend %clickable;
+
             &,
             .icon {
                 width: $site-head__icon-size;

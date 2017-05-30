@@ -1,0 +1,8 @@
+// Nudge an element on active so it feels clicked
+%clickable {
+    position: relative;
+
+    &:active {
+        top: 2px;
+    }
+}

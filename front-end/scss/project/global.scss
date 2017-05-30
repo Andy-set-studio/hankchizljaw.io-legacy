@@ -19,6 +19,7 @@ body {
     min-width: $site-min-width;
     min-height: 100%;
     color: $black;
+    background: $eggshell;
     -webkit-text-size-adjust: 100%;
 
     @include font-size($base-font-size, true);
