@@ -9,3 +9,4 @@ _site
 .jekyll-metadata
 assets
 _includes/svg
+_config_dev.yml
