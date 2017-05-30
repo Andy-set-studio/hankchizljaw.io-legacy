@@ -1,7 +1,7 @@
 <nav class="[ {{ include.parent_class }} ] [ nav ]">
     <ul class="[ nav__list ] [ flow-horizontal ]">
 
-        {% for item in site.navigation %}
+        {% for item in include.items %}
             <li class="nav__item">
 
                 {% if item.title and item.permalink %}

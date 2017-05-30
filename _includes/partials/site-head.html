@@ -1,5 +1,6 @@
 <header class="[ site-head ] [ chunk ]" role="banner">
     <h1 class="is-hidden--text">{{ page.hidden_title | default: page.title }}</h1>
+    <a class="is-hidden--text" href="main-content">Skip to main content</a>
     <div class="wrapper">
         <div class="[ site-head__inner ] [ flow-horizontal ]">
             <a class="site-head__brand" href="/">
@@ -8,7 +9,7 @@
                 {% include icon.html id="logo" %}
             </a>
 
-            {% include nav.html parent_class="site-head__nav" %}
+            {% include partials/nav.html parent_class="site-head__nav" items=site.navigation %}
         </div>
     </div>
 </header>
