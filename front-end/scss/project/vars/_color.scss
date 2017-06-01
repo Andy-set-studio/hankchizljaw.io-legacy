@@ -4,6 +4,8 @@ $white: #ffffff;
 $charcoal: #333333;
 
 $grey: #acacac;
+$grey--mid: darken($grey, 25%);
+$grey--dark: darken($grey, 35%);
 
 $eggshell: #f9f9f9;
 
@@ -11,4 +13,4 @@ $purple: #9a46fa;
 $purple--mid: darken($purple, 15%);
 $purple--dark: darken($purple, 25%);
 
-$orange: #FE9000;
+$orange: #fe9000;
