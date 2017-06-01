@@ -3,6 +3,9 @@ title: Andy Bell - Designer & Front-End Developer
 asset_version: 0.1.0
 asset_base: https://assets.hankchizljaw/assets
 
+# Permalink settings
+permalink: /blog/:title
+
 # Build settings
 markdown: kramdown
 exclude:
