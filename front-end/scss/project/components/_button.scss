@@ -1,0 +1,65 @@
+$button__border-size: 2px;
+$button__transition-speed: 150ms;
+
+// Button
+.button {
+    display: inline-block;
+    color: $black;
+    text-decoration: none;
+    padding: 6px 16px;
+    font-weight: bold;
+    border-bottom: $button__border-size solid;
+    border-left: $button__border-size solid;
+    border-color: $grey;
+    position: relative;
+    transition: all $button__transition-speed ease;
+    
+    &:before,
+    &:after {
+        display: block;
+        width: 0px;
+        height: 0px;
+        border: $button__border-size solid transparent;
+        position: absolute;
+        
+        // Set height and delayed width and border color transitions
+        transition: height $button__transition-speed ease-out, width $button__transition-speed ease-out 200ms, border-color $button__transition-speed ease;
+
+        @include pseudo-decor();
+    }
+    
+    // Set negative positions to account for core border of button
+    &:before {
+        top: -$button__border-size;
+        right: -$button__border-size;
+    }
+    
+    &:after {
+        bottom: -$button__border-size;
+        left: -$button__border-size;
+    }
+    
+    @include hover() {
+        color: $grey--dark; 
+
+        // Set full widths with border accounted for
+        &:before,
+        &:after {
+            width: calc(100% + #{ $button__border-size * 2 });
+            height: calc(100% + #{ $button__border-size * 2 });
+            
+        }
+        
+        // Set border colors
+        &:before {
+            border-top-color: $orange;
+            border-right-color: $orange;
+        }
+        
+        &:after {
+            border-bottom-color: $eggshell;
+            border-left-color: $eggshell;
+        }
+    }
+
+}
