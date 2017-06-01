@@ -5,4 +5,8 @@ layout: base
 {% include partials/headline.html heading=page.title summary=page.summary %}
 {% include partials/splitter.html %}
 
-{{ content }}
+<div class="flow-vertical--double">
+    <h2 class="heading heading--secondary">Latest posts</h2>
+
+    {% include partials/post-list.html %}
+</div>
