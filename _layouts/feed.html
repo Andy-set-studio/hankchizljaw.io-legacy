@@ -9,4 +9,10 @@ layout: base
     <h2 class="heading heading--secondary">Writing</h2>
 
     {% include partials/post-list.html %}
+
+    {% if page.show_archive_link %}
+        <footer>
+            <a href="{{ site.posts_root }}">See all writing<span aria-hidden="true" role="presentation"> &rArr;</span></a>
+        </footer>
+    {% endif %}
 </div>
