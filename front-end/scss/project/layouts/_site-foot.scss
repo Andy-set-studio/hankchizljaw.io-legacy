@@ -1,6 +1,6 @@
 .site-foot {
     
     @include mode("global") {
-
+        padding: 0 0 $gutter--double 0;
     }
 }

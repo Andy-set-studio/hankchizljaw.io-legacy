@@ -29,6 +29,15 @@ a[href^="mailto"] {
     @include word-wrap();
 }
 
+a:not([class]) {
+    color: $purple--mid;
+    text-decoration: none;
+
+    @include hover() {
+        text-decoration: underline;
+    }
+}
+
 .clear {
 
     &:after,
@@ -38,7 +47,6 @@ a[href^="mailto"] {
         display: block;
     }
 }
-
 /*------------------------------------*\
     PRINT MEDIA QUERIES
 
