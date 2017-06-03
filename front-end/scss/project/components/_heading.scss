@@ -1,32 +1,19 @@
 .heading {
     
     @include mode("global") {
-        font-weight: 700;
     
         // Go through the sizes
 
         &--primary {
-            @include font-size(40px, true, false, $tight-line-height-ratio);
-
-            @include media-query("lap-and-up") {
-                @include font-size(48px, true, false, $tight-line-height-ratio);
-            }
+            @extend %heading--primary;
         }
 
         &--secondary {
-            @include font-size(32px, true, false, $tight-line-height-ratio);
-
-            @include media-query("lap-and-up") {
-                @include font-size(40px, true, false, $tight-line-height-ratio);
-            }
+            @extend %heading--secondary;
         }
 
         &--tertiary {
-            @include font-size(28px, true, false, $tight-line-height-ratio);
-
-            @include media-query("lap-and-up") {
-                @include font-size(32px, true, false, $tight-line-height-ratio);
-            }
+            @extend %heading--tertiary;
         }
     }
 }

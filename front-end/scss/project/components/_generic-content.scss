@@ -1,0 +1,19 @@
+// Generic body copy
+.generic-content {
+    max-width: 75ch;
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    hyphens: auto;
+    
+    // Headings
+    h3 {
+      @extend %heading--secondary;  
+    }
+
+    code {
+        background: white;
+        color: $purple--dark;
+        padding: 2px;
+    }
+}

@@ -28,14 +28,28 @@ body {
 a[href^="mailto"] {
     @include word-wrap();
 }
-
+    
 a:not([class]) {
-    color: $purple--mid;
-    text-decoration: none;
+    font-weight: 500;
+    color: $orange;
+    text-decoration: underline;
 
-    @include hover() {
-        text-decoration: underline;
+    &:focus,
+    &:hover {
+        text-decoration: none;
     }
+}
+
+abbr {
+    outline: none;
+    border: none;
+    text-decoration: none;
+    cursor: help;
+}
+
+sup {
+    line-height: 0;
+    font-size: 60%;
 }
 
 .clear {

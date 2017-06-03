@@ -2,4 +2,15 @@
 layout: base
 ---
 
-{{ content }}
+{% capture post_summary %}
+    <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{% include ordinalized-date.html %}</time>
+    <span aria-hidden="true" role="presentation"> - {% include reading-time.html %} read</span>
+    <span class="is-hidden--text">This post will take approximately {% include reading-time.html %} to read</span>
+{% endcapture %}
+
+{% include partials/headline.html heading=page.title summary=post_summary %}
+{% include partials/splitter.html %}
+
+<article class="[ flow-vertical--double ] [ generic-content  ]">
+    {{ content }}
+</article>
