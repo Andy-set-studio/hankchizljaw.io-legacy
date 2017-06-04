@@ -3,13 +3,7 @@
         
         {% for item in include.items %}
             <li class="nav__item">
-
-                {% if item.title and item.permalink %}
-                    <a href="{{ item.url }}" class="[ nav__link ] [ is-active ]" role="menu-item" aria-label="Current page">{{ item.text }}</a>
-                {% else %}
-                    <a href="{{ item.url }}" class="nav__link" role="menu-item">{{ item.text }}</a>
-                {% endif %}
-
+                <a href="{{ item.url }}" class="nav__link" role="menu-item">{{ item.text }}</a>
             </li>
         {% endfor %}
     
