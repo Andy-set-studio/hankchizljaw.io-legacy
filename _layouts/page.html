@@ -1,0 +1,16 @@
+---
+layout: base
+---
+{% include partials/headline.html heading=page.title summary=page.summary %}
+{% include partials/splitter.html %}
+
+<article class="[ generic-content ] [ clear ]">
+    
+    {% if page.feature_image %}
+        <img src="{{ site.asset_base }}{{ page.feature_image.path }}" alt="{{ page.feature_image.alt }}" />
+    {% endif %}
+
+    <div class="[ flow-vertical--double ]">
+        {{ content }}
+    </div>
+</article>

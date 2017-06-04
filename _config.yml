@@ -32,3 +32,5 @@ footer_links:
     url: //github.com/hankchizljaw
   - text: About
     url: /about/
+  - text: Now
+    url: /now/

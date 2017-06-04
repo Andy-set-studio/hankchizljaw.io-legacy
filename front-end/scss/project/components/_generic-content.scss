@@ -16,4 +16,30 @@
         color: $purple--dark;
         padding: 2px;
     }
+
+    // An image that has no class should be floated left and given breathing room
+    img:not([class]) {
+        float: left;
+        margin: 9px 22px 0 0;
+        max-width: 200px;
+        border-radius: $radius--mini;
+    }
+
+    // List styles
+
+    ul, ol {
+        padding-left: $gutter--midi;
+
+        > li + li {
+            padding-top: $rhythm;
+        }
+    }
+
+    ul {
+        list-style: disc;
+    }
+
+    ol {
+        list-style: decimal;
+    }
 }

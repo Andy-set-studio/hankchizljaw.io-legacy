@@ -1,4 +1,7 @@
 <section class="[ headline ] [ flow-vertical--mini ]">
     <h2 class="[ headline__heading ] [ heading heading--primary ]">{{ include.heading }}</h2>
-    <p class="headline__summary">{{ include.summary }}</p>
+    
+    {% if include.summary %}
+        <p class="headline__summary">{{ include.summary }}</p>
+    {% endif %}
 </section>
