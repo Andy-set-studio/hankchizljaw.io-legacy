@@ -4,6 +4,8 @@ asset_version: 0.1.0
 asset_base: https://assets.hankchizljaw/assets
 posts_per_page: 4
 posts_root: /writing/
+email_address: me@andy-bell.co.uk
+twitter_address: &twitter_address "//twitter.com/hankchizljaw"
 
 # Permalink settings
 permalink: /writing/:title
@@ -27,7 +29,7 @@ navigation:
 # Footer links
 footer_links: 
   - text: Twitter
-    url: //twitter.com/hankchizljaw
+    url: *twitter_address
   - text: GitHub
     url: //github.com/hankchizljaw
   - text: About
