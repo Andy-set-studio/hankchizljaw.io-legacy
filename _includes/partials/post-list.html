@@ -5,7 +5,7 @@
         <li class="post-list__item"> 
             <article class="flow-vertical">
                 <h3 class="[ post-list__heading ] [ heading heading--tertiary ]"> 
-                    <a href="{{ item.url }}" rel="bookmark"> 
+                    <a href="{{ item.url }}/" rel="bookmark"> 
                         <span class="is-hidden--text">Continue reading: {{ item.title }}</span>
                         <span aria-hidden="true" role="presentation">{{ item.title }}</span>
                     </a>
@@ -13,7 +13,7 @@
                 <div class="[ post-list__content ] [ flow-vertical ]">
                     <p class="post-list__summary">{{ item.summary }}</p>
                     <div class="post-list__action">
-                        <a class="button" href="{{ item.url }}" rel="bookmark"> 
+                        <a class="button" href="{{ item.url }}/" rel="bookmark"> 
                             <span aria-hidden="true" role="presentation">Continue</span> 
                             <span class="is-hidden--text">Continue reading: {{ item.title }}</span> 
                         </a>
