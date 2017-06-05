@@ -3,6 +3,7 @@
 \*------------------------------------*/
 
 var autoprefixer = require('gulp-autoprefixer'),
+    babelify = require('babelify'),
     cleanCSS = require('gulp-clean-css'),
     concat = require('gulp-concat'),
     connect = require('gulp-connect'),
@@ -10,6 +11,8 @@ var autoprefixer = require('gulp-autoprefixer'),
     del = require('del'),
     fs = require('fs'),
     gulp = require('gulp'),
+    gulpBrowserify = require('gulp-browserify'),
+    gulpif = require('gulp-if'),
     merge = require('merge-stream'),
     nunjucksRender = require('gulp-nunjucks-render'),
     plumber = require('gulp-plumber'),
@@ -117,21 +120,18 @@ gulp.task('process-script-libs', function() {
 
 // Process JavaScript
 gulp.task('process-scripts', function() {
+    
+    var isProduction = process.env.NODE_ENV === 'production';
 
-    var sources = [
-        SCRIPT_PATH + '/_helpers.js',
-        SCRIPT_PATH + '/modules/*.js',
-        SCRIPT_PATH + '/app.js'
-    ];
-
-    // Process libs first
-    gulp.start('process-script-libs');
-
-    return gulp.src(sources)
+    return gulp.src(SCRIPT_PATH + '/app.js')
                 .pipe(plumber())
                 .pipe(sourcemaps.init())
                 .pipe(concat('app.js'))
-                .pipe(uglify())
+                .pipe(gulpBrowserify({
+                    debug: !isProduction,
+                    transform: [babelify]
+                }))
+                .pipe(gulpif(isProduction, uglify()))
                 .pipe(sourcemaps.write('.'))
                 .pipe(gulp.dest(WEB_PATH + '/scripts'));
 });

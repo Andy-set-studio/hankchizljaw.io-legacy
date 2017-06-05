@@ -28,6 +28,11 @@
         </div>
 
         {% include partials/site-foot.html %}
-
+        
+        <script>
+            window._ASSET_BASE = '{{ site.asset_base }}';
+            window._ASSET_VERSION = '{{ site.asset_version }}';
+        </script>
+        <script src="{{ site.asset_base }}/scripts/app.js?{{ site.asset_version }}" async></script>
     </body>
 </html>
