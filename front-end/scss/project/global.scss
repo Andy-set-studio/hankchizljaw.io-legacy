@@ -31,12 +31,12 @@ a[href^="mailto"] {
     
 a:not([class]) {
     font-weight: 500;
-    color: $orange;
-    text-decoration: underline;
+    color: $purple--mid;
+    text-decoration: none;
 
     &:focus,
     &:hover {
-        text-decoration: none;
+        color: $purple;
     }
 }
 
