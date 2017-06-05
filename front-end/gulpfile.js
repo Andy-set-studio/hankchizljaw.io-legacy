@@ -256,6 +256,9 @@ gulp.task('watch', function() {
 
 });
 
+// Build and bail
+gulp.task('build', ['clean-web', 'process-svg', 'process-sass', 'process-scripts', 'process-images', 'process-fonts', 'website-assets']);
+
 gulp.task('default', function() {
     gulp.start('serve');
 });

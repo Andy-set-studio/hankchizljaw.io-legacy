@@ -1,12 +1,18 @@
 {
-    "name": "stalfos",
+    "name": "hankchizljaw.io",
     "version": "1.1.0",
-    "description": "A little project for building front-end templates with html, scss, js and svg",
-    "scripts": {},
+    "description": "hankchizljaw.io front-end",
+    "scripts": {
+        "deploy": "NODE_ENV=production gulp build && git ftp push"
+    },
     "repository": {},
     "author": "hankchizljaw",
     "license": "ISC",
     "devDependencies": {
+        "babel-preset-es2015": "^6.24.1",
+        "babel-preset-stage-2": "^6.24.1",
+        "babelify": "^7.3.0",
+        "gulp-browserify": "^0.5.1",
         "gulp-autoprefixer": "~3.1.0",
         "gulp-clean-css": "^2.0.13",
         "gulp-concat": "^2.5.2",
@@ -14,6 +20,7 @@
         "gulp-data": "~1.2.0",
         "del": "~2.2.2",
         "gulp": "~3.9.1",
+        "gulp-if": "^2.0.2",
         "gulp-nunjucks-render": "~2.2.1",
         "gulp-plumber": "^1.0.2",
         "gulp-prettify": "~0.4.0",
