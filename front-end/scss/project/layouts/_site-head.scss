@@ -3,7 +3,8 @@ $site-head__icon-size: 40px;
 .site-head {
     
     @include mode("global") {
-        
+        padding: $gutter 0 0 0;
+
         // The inner flex wrapper 
         &__inner {
             @extend %flex-wrapper;

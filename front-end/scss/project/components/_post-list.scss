@@ -1,18 +1,9 @@
 .post-list {
     
-    &__heading {
+    @include mode("enhancements") {
         
-        a {
-            text-decoration: none;
-            color: $purple--mid;
-
-            @include hover() {
-                color: $purple;
-            }
+        &__summary {
+            max-width: $max-line-length;
         }
-    }
-
-    &__summary {
-        max-width: $max-line-length;
     }
 }
