@@ -122,7 +122,7 @@ gulp.task('process-script-libs', function() {
 gulp.task('process-scripts', function() {
     
     var isProduction = process.env.NODE_ENV === 'production';
-
+    
     return gulp.src(SCRIPT_PATH + '/app.js')
                 .pipe(plumber())
                 .pipe(sourcemaps.init())
