@@ -24,9 +24,9 @@ navigation:
   - text: "Home"
     url: *url
   - text: "Writing"
-    url: "/writing/"
+    url: "writing/"
   - text: "Contact"
-    url: "/contact/"
+    url: "contact/"
 
 # Footer links
 footer_links:
@@ -35,6 +35,6 @@ footer_links:
   - text: "GitHub"
     url: "//github.com/hankchizljaw"
   - text: "About"
-    url: "/about/"
+    url: "about/"
   - text: "Now"
-    url: "/now/"
+    url: "now/"
