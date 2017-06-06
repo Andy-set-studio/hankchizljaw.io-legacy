@@ -3,7 +3,7 @@
         
         {% for item in include.items %}
             <li class="nav__item">
-                <a href="{{ item.url }}" class="nav__link" role="menu-item">{{ item.text }}</a>
+                <a href="{{ site.baseurl }}{{ item.url }}" class="nav__link" role="menu-item">{{ item.text }}</a>
             </li>
         {% endfor %}
     
