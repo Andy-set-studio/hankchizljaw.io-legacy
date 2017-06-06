@@ -1,6 +1,6 @@
 # Global content
 title: "Andy Bell - Designer & Front-End Developer"
-asset_version: "v0.1.0"
+asset_version: "v0.2.0"
 asset_base: "https://assets.hankchizljaw.io/assets"
 posts_per_page: 4
 posts_root: "/writing/"
@@ -8,8 +8,8 @@ email_address: "me@andy-bell.co.uk"
 twitter_address: &twitter_address "//twitter.com/hankchizljaw"
 
 # Permalink settings
-baseurl: ""
-url: "https://hankchizljaw.github.io"
+url: &url "https://hankchizljaw.github.io"
+baseurl: *url
 permalink: "/writing/:title"
 
 # Build settings
