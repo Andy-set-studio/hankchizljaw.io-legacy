@@ -1,7 +1,7 @@
-# Permalink settings
-url: &url "https://hankchizljaw.github.io/hankchizljaw.io/"
+# Linkage settings
+url: &url "https://hankchizljaw.github.io/hankchizljaw.io"
 baseurl: *url
-permalink: "/writing/:title"
+permalink: "/writing/:title/"
 
 # Build settings
 markdown: "kramdown"
@@ -22,11 +22,11 @@ twitter_address: &twitter_address "//twitter.com/hankchizljaw"
 # Navigation
 navigation:
   - text: "Home"
-    url: *url
+    url: !concat ["/", *url]
   - text: "Writing"
-    url: "writing/"
+    url: "/writing/"
   - text: "Contact"
-    url: "contact/"
+    url: "/contact/"
 
 # Footer links
 footer_links:
@@ -35,6 +35,6 @@ footer_links:
   - text: "GitHub"
     url: "//github.com/hankchizljaw"
   - text: "About"
-    url: "about/"
+    url: "/about/"
   - text: "Now"
-    url: "now/"
+    url: "/now/"
