@@ -1,38 +1,40 @@
 # Global content
-title: Andy Bell - Designer & Front-End Developer
-asset_version: v0.1.0
-asset_base: https://assets.hankchizljaw.io/assets
+title: "Andy Bell - Designer & Front-End Developer"
+asset_version: "v0.1.0"
+asset_base: "https://assets.hankchizljaw.io/assets"
 posts_per_page: 4
-posts_root: /writing/
-email_address: me@andy-bell.co.uk
+posts_root: "/writing/"
+email_address: "me@andy-bell.co.uk"
 twitter_address: &twitter_address "//twitter.com/hankchizljaw"
 
 # Permalink settings
-permalink: /writing/:title
+baseurl: ""
+url: "https://hankchizljaw.github.io"
+permalink: "/writing/:title"
 
 # Build settings
-markdown: kramdown
+markdown: "kramdown"
 exclude:
-  - Gemfile
-  - Gemfile.lock
-  - front-end
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "front-end"
 
 # Navigation
 navigation:
-  - text: Home
-    url: /
-  - text: Writing
-    url: /writing/
-  - text: Contact
-    url: /contact/
+  - text: "Home"
+    url: "/"
+  - text: "Writing"
+    url: "/writing/"
+  - text: "Contact"
+    url: "/contact/"
 
 # Footer links
-footer_links: 
-  - text: Twitter
+footer_links:
+  - text: "Twitter"
     url: *twitter_address
-  - text: GitHub
-    url: //github.com/hankchizljaw
-  - text: About
-    url: /about/
-  - text: Now
-    url: /now/
+  - text: "GitHub"
+    url: "//github.com/hankchizljaw"
+  - text: "About"
+    url: "/about/"
+  - text: "Now"
+    url: "/now/"
