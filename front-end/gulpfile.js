@@ -49,6 +49,7 @@ var SVG_PATH = 'svg',
     WEBSITE_IMAGE_PATH = WEBSITE_PATH + '/images',
     WEBSITE_FONT_PATH = WEBSITE_PATH + '/fonts',
     WEBSITE_SVG_SYMBOL_PATH = '../_includes/svg',
+    WEBSITE_CSS_INCLUDES_PATH = '../_includes/css/',
     DATA_FILE = 'data.json';
 
 /*------------------------------------*\
@@ -179,6 +180,10 @@ gulp.task('website-assets', function() {
     var websiteCSS = gulp.src([WEB_PATH + '/css/**/*'])
                             .pipe(gulp.dest(WEBSITE_CSS_PATH));
 
+    // CSS files that are included in the jekyll _includes directory
+    var websiteCSSIncludes = gulp.src([WEB_PATH + '/css/**/*'])
+                                    .pipe(gulp.dest(WEBSITE_CSS_INCLUDES_PATH));
+
     // Script files
     var websiteScripts = gulp.src([WEB_PATH + '/scripts/**/*'])
                             .pipe(gulp.dest(WEBSITE_SCRIPT_PATH));
@@ -188,7 +193,7 @@ gulp.task('website-assets', function() {
                             .pipe(gulp.dest(WEBSITE_FONT_PATH));
 
     // Merge the mini tasks
-    return merge(websiteImages, websiteCSS, websiteScripts, websiteFonts);
+    return merge(websiteImages, websiteCSS, websiteCSSIncludes, websiteScripts, websiteFonts);
 
 });
 

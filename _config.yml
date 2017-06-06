@@ -22,7 +22,7 @@ twitter_address: &twitter_address "//twitter.com/hankchizljaw"
 # Navigation
 navigation:
   - text: "Home"
-    url: !concat ["/", *url]
+    url: "/" 
   - text: "Writing"
     url: "/writing/"
   - text: "Contact"
