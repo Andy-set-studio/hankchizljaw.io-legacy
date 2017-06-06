@@ -3,7 +3,7 @@
     "version": "1.1.0",
     "description": "hankchizljaw.io front-end",
     "scripts": {
-        "deploy": "rm -r -f .public && NODE_ENV=production gulp build && cd ../ && git ftp push && cd front-end"
+        "deploy": "rm -r -f .public && rm -r -f ../assets && NODE_ENV=production gulp build && cd ../ && git ftp push && cd front-end"
     },
     "repository": {},
     "author": "hankchizljaw",
