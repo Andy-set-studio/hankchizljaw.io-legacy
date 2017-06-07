@@ -38,3 +38,7 @@ footer_links:
     url: "/about/"
   - text: "Now"
     url: "/now/"
+
+# Additional Gems 
+gems:
+  - "jekyll-redirect-from"

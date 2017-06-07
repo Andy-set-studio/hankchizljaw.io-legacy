@@ -2,6 +2,7 @@
 layout: post
 title: "Should A Designer Be Able To Code?"
 summary: "I talk about my opinion on wether or not designers - specifically web designers should be able to code. If they can't code to a production level, I argue that they should at-least be able to code basic HTML and CSS."
+redirect_from: "/blog/should-a-designer-be-able-to-code"
 ---
 
 ### Probably.
