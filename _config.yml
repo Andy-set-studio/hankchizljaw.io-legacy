@@ -11,13 +11,13 @@ exclude:
   - "front-end"
 
 # Global content
-title: "Andy Bell - Designer & Front-End Developer"
+title: "Andy Bell - Front-End Engineer And Designer"
 asset_version: "v0.2.0"
 asset_base: "https://assets.hankchizljaw.io/assets"
 posts_per_page: 4
 posts_root: !concat [*url, "/writing/"]
 email_address: "me@andy-bell.co.uk"
-twitter_address: &twitter_address "//twitter.com/hankchizljaw"
+twitter_handle: &twitter_handle "hankchizljaw"
 
 # Navigation
 navigation:
@@ -31,7 +31,7 @@ navigation:
 # Footer links
 footer_links:
   - text: "Twitter"
-    url: *twitter_address
+    url: !concat ["//twitter.com/", *twitter_handle]
   - text: "GitHub"
     url: "//github.com/hankchizljaw"
   - text: "About"
