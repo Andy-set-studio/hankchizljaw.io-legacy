@@ -1,5 +1,5 @@
 # Linkage settings
-url: &url "https://hankchizljaw.github.io/hankchizljaw.io"
+url: &url ""
 baseurl: *url
 permalink: "/writing/:title/"
 
