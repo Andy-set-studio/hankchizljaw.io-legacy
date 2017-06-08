@@ -1,5 +1,13 @@
 <header class="[ site-head ] [ breathe--top ]" role="banner">
-    <h1 class="is-hidden--text">{{ page.hidden_title | default: page.title }}</h1>
+    <h1 class="is-hidden--text">
+        
+        {% if page.layout == "post" %}
+            <span>Article written by Andy Bell on {% include ordinalized-date.html %}</span>
+        {% else %}
+            <span>{{ page.hidden_title | default: page.title }}</span>
+        {% endif %}
+
+    </h1>
     <a class="is-hidden--text" href="#main-content">Skip to main content</a>
     <div class="wrapper">
         <div class="[ site-head__inner ] [ flow-horizontal ]">
