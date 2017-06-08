@@ -23,6 +23,7 @@ body {
     -webkit-text-size-adjust: 100%;
 
     @include font-size($base-font-size, true);
+    @include selection($purple--dark, $white);
 }
 
 a[href^="mailto"] {
