@@ -24,13 +24,13 @@
             color: $charcoal;
             font-weight: 400;
 
-            @include hover() {
-                color: $purple;
+            &.is-active {
+                color: $purple--mid;
+                font-weight: 500;
             }
 
-            &.is-active {
+            @include hover() {
                 color: $purple;
-                font-weight: 500;
             }
         }
     }
