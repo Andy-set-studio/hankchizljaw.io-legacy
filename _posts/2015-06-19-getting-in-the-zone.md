@@ -2,17 +2,18 @@
 layout: post
 title: "Getting In The Zone"
 summary: "I talk about my endless struggles with concentration and getting in the right frame of mind to design. The hope is to give a brief insight into the workflow and mind of a designer."
+redirect_from: "/blog/getting-in-the-zone"
 ---
 
 It's the hardest thing to do as a designer.
 
 I really struggle to get in the zone. I'm pretty sure I would find running a marathon easier sometimes. When you work in an agency though, sometimes you just have to get in the zone - there and then.
 
-###But How Can You Possibly Do That?
+### But How Can You Possibly Do That?
 
 It's really hard and it takes years to condition yourself to be able to do it. The answer for me personally, is as simple as one word.
 
-> Procrastination.
+**Procrastination.**
 
 I hear the sound of a thousand cups of ‘aeropressed' coffee being spat out as I write this.
 
@@ -24,7 +25,7 @@ I could easily force myself to sit in front of Photoshop or Sketch and put any o
 
 I much prefer to spend an hour procrastinating and ‘warming' my creative brain up. I then produce an arguably much higher standard of work, in a shorter amount of time. I tend to like the work I produce with this method.
 
-###So What Do I Do?
+### So What Do I Do?
 
 I do a variety of things that put me in the right mood to design. A typical list for me would be:
 

@@ -3,7 +3,7 @@
     {% if page.meta_title %}
         {{ page.meta_title | replace: "site_title", site.title }}
     {% else %}
-        {{ site.title }} - {{ page.title }}
+        {{ page.title }} - {{ site.title }}
     {% endif %}
 
 {% endcapture %}

@@ -44,5 +44,23 @@
         ol {
             list-style: decimal;
         }
+
+        // Make blockquotes pretty
+        blockquote {
+            margin: $rhythm--double 0 0 0;
+            padding-left: $gutter;
+            padding-bottom: $gutter;
+            border-left: 5px solid $orange;
+
+            > * + * {
+                margin-top: $gutter--mini;
+            }
+        }
+
+        // Give an article footer some breathing room
+        footer {
+            padding-top: $gutter--treble;
+            font-style: italic;
+        }
     }
 }
