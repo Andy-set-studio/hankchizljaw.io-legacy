@@ -4,6 +4,8 @@
         
         &__summary {
             max-width: $max-line-length;
+            
+            @include font-size(18px, true, false, $body-copy-line-height-ratio);
         }
     }
 }

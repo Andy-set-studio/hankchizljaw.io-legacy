@@ -1,13 +1,13 @@
 // Generic body copy
 .generic-content {
 
-    @include mode("enhancements") {
+    @include mode("global") {
         max-width: 75ch;
         font-weight: 300;
-        font-size: 1.2rem;
-        line-height: 1.7;
         hyphens: auto;
-        
+       
+        @include font-size(18px, true, false, $body-copy-line-height-ratio);
+
         // Headings
         h3 {
           @extend %heading--secondary;  
