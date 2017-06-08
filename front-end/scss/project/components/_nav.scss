@@ -27,6 +27,11 @@
             @include hover() {
                 color: $purple;
             }
+
+            &.is-active {
+                color: $purple;
+                font-weight: 500;
+            }
         }
     }
 }
