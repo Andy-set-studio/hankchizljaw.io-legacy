@@ -50,7 +50,8 @@ var SVG_PATH = 'svg',
     WEBSITE_FONT_PATH = WEBSITE_PATH + '/fonts',
     WEBSITE_SVG_SYMBOL_PATH = '../_includes/svg',
     WEBSITE_CSS_INCLUDES_PATH = '../_includes/css/',
-    DATA_FILE = 'data.json';
+    DATA_FILE = 'data.json',
+    IS_PRODUCTION = process.env.NODE_ENV === 'production';
 
 /*------------------------------------*\
     TASKS
@@ -94,14 +95,14 @@ gulp.task('process-sass', function () {
 
     return gulp.src(SCSS_PATH + '/**/*.scss')
                 .pipe(plumber())
-                .pipe(sourcemaps.init())
+                .pipe(gulpif(!IS_PRODUCTION, sourcemaps.init()))
                 .pipe(sass().on('error', sass.logError))
                 .pipe(autoprefixer({
                     browsers: ['last 2 versions'],
                     cascade: false
                 }))
                 .pipe(cleanCSS())
-                .pipe(sourcemaps.write('.'))
+                .pipe(gulpif(IS_PRODUCTION, sourcemaps.write('.')))
                 .pipe(gulp.dest(WEB_PATH + '/css'));
 });
 
@@ -122,17 +123,15 @@ gulp.task('process-script-libs', function() {
 // Process JavaScript
 gulp.task('process-scripts', function() {
     
-    var isProduction = process.env.NODE_ENV === 'production';
-    
     return gulp.src(SCRIPT_PATH + '/app.js')
                 .pipe(plumber())
                 .pipe(sourcemaps.init())
                 .pipe(concat('app.js'))
                 .pipe(gulpBrowserify({
-                    debug: !isProduction,
+                    debug: !IS_PRODUCTION,
                     transform: [babelify]
                 }))
-                .pipe(gulpif(isProduction, uglify()))
+                .pipe(gulpif(IS_PRODUCTION, uglify()))
                 .pipe(sourcemaps.write('.'))
                 .pipe(gulp.dest(WEB_PATH + '/scripts'));
 });
