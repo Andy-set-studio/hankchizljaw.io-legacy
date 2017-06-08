@@ -2,6 +2,17 @@
 .generic-content {
 
     @include mode("global") {
+        
+        // An image that has no class should be floated left and given breathing room
+        img:not([class]) {
+            float: left;
+            margin: 9px 22px 0 0;
+            max-width: 200px;
+            border-radius: $radius--mini;
+        }
+    }
+
+    @include mode("enhancements") {
         max-width: 75ch;
         font-weight: 300;
         hyphens: auto;
@@ -19,13 +30,6 @@
             padding: 2px;
         }
 
-        // An image that has no class should be floated left and given breathing room
-        img:not([class]) {
-            float: left;
-            margin: 9px 22px 0 0;
-            max-width: 200px;
-            border-radius: $radius--mini;
-        }
 
         // List styles
 
