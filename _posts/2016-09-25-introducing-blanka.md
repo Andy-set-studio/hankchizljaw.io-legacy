@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Introducing Blanka"
-summary: "I've made a little Chrome extension that should help remedy the widespread target=&quote;_blank&quote; abuse on the web. Hopefully it'll help lots of people out by automatically stripping those nasty attributes out for them."
+summary: "I've made a little Chrome extension that should help remedy the widespread <code>target=\"_blank\"</code> abuse on the web. Hopefully it'll help lots of people out by automatically stripping those nasty attributes out for them."
 redirect_from: "/blog/introducing-blanka"
 ---
 
