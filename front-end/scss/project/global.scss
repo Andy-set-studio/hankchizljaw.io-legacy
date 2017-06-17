@@ -1,17 +1,22 @@
 /*------------------------------------*\
-    IMPORT FRAMEWORK
+    IMPORT FRAMEWORK AND HELPERS ETC
 \*------------------------------------*/
 @import "../framework/build";
 @import "../framework/core/reset";
-
+@import "imports/mixins";
+@import "imports/helpers";
+@import "imports/animations";
 
 /*------------------------------------*\
     ADD SOME GLOBAL STYLES
 \*------------------------------------*/
 html {
+    @extend %gradmotion;
+
     width: 100%;
     height: 100%;
     font-size: $base-font-size;
+    background: $standard-grad;
 }
 
 body {
@@ -20,7 +25,14 @@ body {
     min-height: 100%;
     color: $black;
     background: $eggshell;
+    padding: $gutter 0;
+    margin: $gutter--mini;
     -webkit-text-size-adjust: 100%;
+
+    @include media-query("lap-and-up") {
+        padding: $gutter--double 0;
+        margin: $gutter;
+    }
 
     @include font-size($base-font-size, true);
     @include selection($purple--dark, $white);
@@ -103,9 +115,6 @@ $output-mode: "global";
 /*------------------------------------*\
     IMPORTS
 \*------------------------------------*/
-@import "imports/mixins";
-@import "imports/helpers";
-@import "imports/animations";
 @import "imports/components";
 @import "imports/layouts";
 @import "imports/third-party";

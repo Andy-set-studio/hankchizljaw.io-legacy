@@ -1,13 +1,14 @@
 .splitter {
 
     @include mode("global") {
+        @extend %gradmotion;
+
         display: block;
         height: 2px;
         background: $standard-grad;
         border: none;
         padding: 0;
         margin: $gutter--double 0;
-        animation: gradmotion 5000ms ease infinite;
 
         @include media-query("desk-wide") {
             width: 80%;
