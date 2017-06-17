@@ -14,14 +14,21 @@
 
     @include mode("enhancements") {
         max-width: 75ch;
-        font-weight: 300;
+        font-weight: 400;
         hyphens: auto;
+        color: $charcoal;
        
         @include font-size(18px, true, false, $body-copy-line-height-ratio);
 
+        @include media-query("lap-and-up") {
+            @include font-size(20px, true, false, $body-copy-line-height-ratio);
+        }
+
         // Headings
         h3 {
-          @extend %heading--secondary;  
+            @extend %heading--secondary;  
+
+            color: $black;
         }
 
         code {
@@ -29,7 +36,6 @@
             color: $purple--dark;
             padding: 2px;
         }
-
 
         // List styles
 

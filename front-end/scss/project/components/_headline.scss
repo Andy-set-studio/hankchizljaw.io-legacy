@@ -9,6 +9,8 @@
         }
 
         &__summary {
+            color: $charcoal;
+            
             @include font-size(24px, true, false, $tight-line-height-ratio);
         }
     }
