@@ -12,7 +12,7 @@ exclude:
 
 # Global content
 title: "Andy Bell - Front-End Engineer And Designer"
-asset_version: "v1.1.2"
+asset_version: "v1.1.3"
 asset_base: "https://assets.hankchizljaw.io/assets"
 posts_per_page: 4
 posts_root: !concat [*url, "/writing/"]
