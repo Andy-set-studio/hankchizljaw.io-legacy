@@ -12,7 +12,8 @@ class TypeSet {
         // Set some settings
         self.settings = {
             minWords: 4,
-            selector: 'h2, h3, h4, p'
+            selector: 'h2, h3, h4, p',
+            ignoreClass: 'js-typeset__ignore'
         }
 
         // Either load from root or the passed parent element
@@ -28,6 +29,11 @@ class TypeSet {
         let self = this;
 
         self.elems.map((elem) => {
+
+            // Bail out 
+            if(elem.classList.contains(self.settings.ignoreClass)) { 
+                return false;
+            }
 
             // For building our result string
             let result = '';
