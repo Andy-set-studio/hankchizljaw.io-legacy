@@ -1,8 +1,6 @@
 .splitter {
 
     @include mode("global") {
-        @extend %gradmotion;
-
         display: block;
         height: 2px;
         background: $standard-grad;
