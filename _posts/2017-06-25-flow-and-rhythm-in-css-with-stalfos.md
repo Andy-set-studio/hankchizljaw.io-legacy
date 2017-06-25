@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Flow and rhythm in CSS with Stalfos"
-summary: "I've added a new component to Stalfos which will hopefully make achieving consitent flow and rhythm easier."
+summary: "I've added a new component to Stalfos which will hopefully make achieving consistent flow and rhythm easier."
 ---
 
 Something I've tried to improve in my CSS work is the implementation of consistent flow and rhythm, while keeping the footprint as low as possible.
