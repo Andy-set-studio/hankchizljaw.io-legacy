@@ -30,10 +30,26 @@
             color: $black;
         }
 
+        // Inline code
         code {
             background: white;
             color: $purple--dark;
             padding: 2px;
+        }
+
+        // Code block
+        pre {
+            @include selection($white, $black);
+        }
+        
+        pre code {
+            display: block;
+            background: $charcoal;
+            color: $eggshell;
+            padding: $gutter;
+            border-radius: $radius--mini;
+
+            @include bounce-scroll("horizontal");
         }
 
         // List styles
