@@ -13,6 +13,6 @@ The rest is history.
 
 CSS Tricks has continued to be a major resource for me. It inspires me daily and provides the most incredibly useful [almanac](https://css-tricks.com/almanac/) of CSS selectors and properties, which I reference religiously. 
 
-So, thank you [Chris](https://twitter.com/chriscoyier) and the team at CSS tricks. You continue to consistently produce incredible content that has surely shaped a generation of web designers and developers. 
+So, thank you [Chris](https://twitter.com/chriscoyier) and [the team](https://css-tricks.com/about/) at CSS tricks. You continue to consistently produce incredible content that has surely shaped a generation of web designers and developers. 
 
 I look forward to seeing what the next 10 years of CSS Tricks will bring!
