@@ -16,7 +16,7 @@ asset_version: "v1.2.2"
 asset_base: "https://assets.hankchizljaw.io/assets"
 posts_per_page: 4
 posts_root: !concat [*url, "/writing/"]
-email_address: "me@andy-bell.co.uk"
+email_address: "andy@hankchizljaw.io"
 twitter_handle: &twitter_handle "hankchizljaw"
 
 # Navigation
