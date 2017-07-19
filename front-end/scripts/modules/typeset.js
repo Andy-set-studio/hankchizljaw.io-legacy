@@ -12,7 +12,7 @@ class TypeSet {
         // Set some settings
         self.settings = {
             minWords: 4,
-            selector: 'h2, h3, h4, p',
+            selector: 'p',
             ignoreClass: 'js-typeset__ignore'
         }
 
