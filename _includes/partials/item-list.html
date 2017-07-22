@@ -1,6 +1,6 @@
 <ol class="[ post-list ] [ flow-vertical--double ]" aria-label="A list of blog posts ordered by date, newest first">
 
-    {% for item in site.posts | limit: page.post_limit %}
+    {% for item in include.source | limit: include.limit %}
         
         <li class="post-list__item"> 
             <article class="flow-vertical">

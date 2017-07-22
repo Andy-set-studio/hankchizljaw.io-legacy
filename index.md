@@ -1,5 +1,5 @@
 ---
-layout: feed
+layout: home
 hidden_title: Andy Bell homepage
 title: Hello, I'm <a href="/about">Andy</a>
 meta_title: site_title
@@ -8,3 +8,4 @@ summary: I'm a front-end developer focusing on JavaScript, scalable CSS and acce
 show_archive_link: true
 post_limit: 4
 ---
+I'm obsessed with producing lightweight, accessible and functional websites that put the user first. I focus heavily on component based design systems powered by BEM driven CSS and modern JavaScript such as ES6, Node, React and Vue. 

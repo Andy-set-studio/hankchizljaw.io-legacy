@@ -1,0 +1,17 @@
+---
+layout: base
+---
+
+{% include partials/headline.html heading=page.title summary=page.summary render_content=true %}
+
+{% include partials/splitter.html %}
+
+<section class="flow-vertical--double">
+    <h2 class="heading heading--secondary">Writing</h2>
+
+    {% include partials/item-list.html source=site.posts limit=page.post_limit %}
+
+    <footer>
+        <a href="{{ site.posts_root }}">See all writing<span aria-hidden="true" role="presentation"> &rArr;</span></a>
+    </footer>
+</section>

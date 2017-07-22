@@ -1,7 +1,15 @@
-<section class="[ headline ] [ flow-vertical--mini ]">
-    <h2 class="[ headline__heading ] [ heading heading--primary ]">{{ include.heading }}</h2>
-    
-    {% if include.summary %}
-        <p class="[ headline__summary ] [ js-typeset__ignore ]">{{ include.summary }}</p>
+<section class="[ headline ] [ flow-vertical--double ]">
+    <div class="flow-vertical--mini">
+        <h2 class="[ headline__heading ] [ heading heading--primary ]">{{ include.heading }}</h2>
+        
+        {% if include.summary %}
+            <p class="[ headline__summary ] [ js-typeset__ignore ]">{{ include.summary }}</p>
+        {% endif %}
+    </div>
+
+    {% if include.render_content %}
+        <article class="[ flow-vertical--double ] [ generic-content ] [ clear ]">
+            {{ content }}
+        </article>
     {% endif %}
 </section>
