@@ -11,7 +11,7 @@ exclude:
   - "front-end"
 
 # Global content
-title: "Andy Bell - Front-End Engineer And Designer"
+title: "Andy Bell - Front-End Developer And Designer"
 asset_version: "v1.2.3"
 asset_base: "https://assets.hankchizljaw.io/assets"
 posts_per_page: 4
