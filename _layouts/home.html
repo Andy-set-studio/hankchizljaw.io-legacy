@@ -7,6 +7,15 @@ layout: base
 {% include partials/splitter.html %}
 
 <section class="flow-vertical--double">
+    <h2 class="heading heading--secondary">Selected Work</h2>
+
+    {% assign work_items = (site.works | sort: "sort_order") %}
+    {% include partials/item-list.html source=work_items %}
+</section>
+
+{% include partials/splitter.html %}
+
+<section class="flow-vertical--double">
     <h2 class="heading heading--secondary">Writing</h2>
 
     {% include partials/item-list.html source=site.posts limit=page.post_limit %}

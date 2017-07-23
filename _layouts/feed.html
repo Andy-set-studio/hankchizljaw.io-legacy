@@ -3,13 +3,15 @@ layout: base
 ---
 {% include partials/headline.html heading=page.title summary=page.summary %}
 {% include partials/splitter.html %}
+{% assign items = [] %}
 
-<div class="flow-vertical--double">
-    {% include partials/item-list.html source=site.posts %}
+<section class="flow-vertical--double">
+    {% case page.source %}
+        {% when "posts" %}
+            {% assign items = site.posts %}
+        {% when "works" %}
+            {% assign items = (site.works | sort: "sort_order") %}
+    {% endcase %}
 
-    {% if page.show_archive_link %}
-        <footer>
-            <a href="{{ site.posts_root }}">See all writing<span aria-hidden="true" role="presentation"> &rArr;</span></a>
-        </footer>
-    {% endif %}
-</div>
+    {% include partials/item-list.html source=items %}
+</section>
