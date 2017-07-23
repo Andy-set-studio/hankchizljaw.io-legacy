@@ -23,6 +23,8 @@ twitter_handle: &twitter_handle "hankchizljaw"
 navigation:
   - text: "Home"
     url: "/" 
+  - text: "Work"
+    url: "/work/"
   - text: "Writing"
     url: "/writing/"
   - text: "Contact"
@@ -38,6 +40,20 @@ footer_links:
     url: "/about/"
   - text: "Now"
     url: "/now/"
+
+# Collections 
+collections:
+  works:
+    output: true
+    permalink: "/work/:title/"
+
+# Default vals
+defaults:
+  - scope:
+      path: ""
+      type: "works"
+    values:
+      layout: "work-item"
 
 # Additional Gems 
 gems:

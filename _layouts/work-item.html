@@ -1,0 +1,35 @@
+---
+layout: base
+---
+{% include partials/headline.html heading=page.title %}
+{% include partials/splitter.html %}
+
+<section class="flow-vertical--double">
+    <article class="[ flow-vertical--double ] [ generic-content ] [ clear ]">
+        {{ content }}
+    </article>
+
+    {% if page.links %}
+        <aside class="[ flow-vertical--double ] [ generic-content ]">
+            <h2 class="heading heading--secondary">Related links</h2>
+            <ul>
+
+                {% for item in page.links %}
+                    <li>
+                        <a href="{{ item.url }}"{% if item.is_external %} rel="external"{% endif %}>
+
+                            {% if item.hidden_text %}
+                                <span class="is-hidden--text">{{ item.hidden_text }}</span>
+                                <span aria-hidden="true" role="presentation">{{ item.text }}</span>
+                            {% else %}
+                                <span>{{ item.text }}</span>
+                            {% endif %}
+
+                        </a>
+                    </li>
+                {% endfor %}
+
+            </ul>
+        </aside>
+    {% endif %}
+</section>
