@@ -1,6 +1,7 @@
 ---
 title: "WriteUpp: Design System"
 summary: "While working within the WriteUpp team, I helped produce a brand new design system that powered two brand new platforms, while improving the main app"
+sort_order: 1
 links:
   - text: "WriteUpp website"
     url: "https://writeupp.com"
