@@ -17,7 +17,7 @@ From the Stalfos documentation site:
 
 > "Stalfos is an open-source, skeletal front-end development starter kit. It provides you with a solid starting-point for working with HTML, Sass and JavaScript. It also provides tools for working with images, fonts and SVG."
 
-I built Stalfos as a boilerplate for building out front-end templates for web projects. It's designed to also continue powering the front-end for the project's lifespan as a separate entity that lives alongside the main codebase. 
+I built Stalfos as a boilerplate for building out front-end templates for web projects. It's designed to also continue powering the front-end for the project's lifespan, as a separate entity that lives alongside the main codebase. 
 
 ### Built around core CSS
 
@@ -31,4 +31,4 @@ Secondary to the CSS framework, Stalfos provides a gulp-based system for dealing
 
 It also provides a mechanism for building static templates with Nunjucks with a handy data system to help prevent repeated markup bloating your template files.
 
-All-in-all, Stalfos is there to help and has been an absolute pleasure to work on over the last couple of years!  
+All-in-all, Stalfos is there to help and has been an absolute pleasure to work on over the last couple of years.

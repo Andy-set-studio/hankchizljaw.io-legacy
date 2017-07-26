@@ -32,9 +32,7 @@ The main browser-based app had an ageing UI that had served them well as an <abb
 I used new product features to slowly develop concepts that would move the app into the new UI system, whilst maintaining continuity for the user with the old system. WriteUpp is a business critical piece of software, so we had absolutely no intention of disrupting the user experience with a sudden redesign. Because of this, the slower transition benefited everyone. The transitional period is still continuing today because WriteUpp is such a huge app. The team [really are doing a great job](https://www.instagram.com/p/BWc1HfVFzHy/), even though it's such a huge undertaking.
 
 ### A brand new online booking system
-WriteUpp had an existing online booking system, but we decided to create a better one from the ground up.
-
-We wanted it to be completely responsive, lightweight and as close to WCAG compliance as possible. By building from the ground up, we had complete control over the codebase which allowed us to optimise the finest of details.
+WriteUpp had an existing online booking system, but we decided to create a better one from the ground up. We wanted it to be completely responsive, lightweight and as close to being WCAG compliant as possible. By building from the ground up, we had complete control over the codebase which allowed us to optimise the finest of details.
 
 The main body of work for this project was completely reworking the user flow. We had to maintain strict security considerations, but we wanted to reduce the restrictiveness of these as much as possible. Taking inspiration from airline and hotel booking systems, we created a flow that allowed a patient the ability to provisionally book their appointment before they had to sign-in or register.
 
@@ -45,4 +43,4 @@ Because WriteUpp is mainly an in-practice desktop app, we wanted to make a compl
 
 The app development process allowed us to simplify existing WriteUpp features and optimise them for small devices. It also allowed us to develop new features such as expense tracking, which eventually rolled into the main WriteUpp app after proving its worth in the mobile app.
 
-The app went down a storm with the users who absolutely loved it. It continues to be well received today thanks to the constant great work from the WriteUpp team.
+The app went down a storm with the users who absolutely loved it. It continues to be well received today thanks to the consistently great work from the WriteUpp team.
