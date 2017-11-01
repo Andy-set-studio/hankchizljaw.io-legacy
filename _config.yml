@@ -36,8 +36,8 @@ footer_links:
     url: !concat ["//twitter.com/", *twitter_handle]
   - text: "GitHub"
     url: "//github.com/hankchizljaw"
-  - text: "LinkedIn"
-    url: "//www.linkedin.com/in/hankchizljaw"
+  - text: "CodePen"
+    url: "//codepen.io/hankchizljaw"
   - text: "About"
     url: "/about/"
   - text: "Now"
